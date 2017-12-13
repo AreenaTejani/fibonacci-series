@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonaccinthnumber</title>
+</head>
+<body>
+
+<label>ENTER THE POSITION TO FIND THE Nth FIBONACCI NUMBER</label>
+<input type="text" id="input">
+<button onclick="SFS()">SHOW FIBONACCI NUMBER</button>
+<p id="output"></p>
+
+
+
+
+<script type="text/javascript">
+	function SFS(){
+        
+        var i;
+		    var val= document.getElementById('input').value;
+        var one=0;
+        var two=1;
+        var three;
+        
+    for(i=0;i<val;i++){
+     three=one+two; 
+      one=two;
+      two=three;
+  }
+
+document.getElementById("output").innerHTML="THE FIBONACCI NUMBER  &nbsp;:&nbsp;"+ one;
+
+}
+</script>
+</body>
+</html>

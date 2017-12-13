@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FibonacciSeries</title>
+</head>
+<body>
+
+<label>ENTER THE LIMIT VALUE OF FIBONACCI SERIES</label>
+<input type="text" id="input">
+<button onclick="SFS()">SHOW FIBONACCI SERIES</button>
+<p id="output"></p>
+
+
+
+
+<script type="text/javascript">
+	function SFS(){
+        
+        var i;
+		var val= document.getElementById('input').value;
+        var one=0;
+        var two=1;
+        var three;
+        var fab= [];
+		
+			
+	for(i=0;i<val;i++){
+
+      three=one+two;
+      fab.push(one); 
+      one=two;
+      two=three;
+  }
+
+document.getElementById("output").innerHTML="THE FIBONACCI SERIES  &nbsp;:&nbsp;"+ fab.toString();
+
+}
+</script>
+</body>
+</html>
